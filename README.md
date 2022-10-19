@@ -1,4 +1,56 @@
-# ft_irc
+# Ft_IRC
+ft_irc is a C++98 Internet Chat server for Linux.
+The server needs to work with real IRC clients. For this server the irssi and kiwiirc clients were used. Multiple servers can be linked to each other to create an IRC network.
+
+# Connect
+If you'd like to try our server without having to build it you can connect to our public server shibrc.ml using the password password with the following commands :
+
+- First install a client, here we'll use **irssi** since it is the one we chose to do the project with :
+```sudo apt install irssi``` or install with **brew** if you are at 42 : ```brew install irssi```<br />
+Then simply connect to the server using this command : ```irssi -c shibrc.ml -w password```
+
+## :computer: USAGE
+
+Run **make**, then ```./ircserv <port> <password>```
+
+## Handled commands
+This following list of commands are handled on our server.
+
+- INVITE
+- JOIN
+- KICK
+- LIST
+- NAMES
+- PART
+- TOPIC
+- NICK
+- QUIT
+- PING
+- PONG
+- NOTICE
+- PRIVMSG
+- WHO
+- WHOIS
+- WHOWAS
+
+## Handled modes :
+The following list of modes are handled by the server, yet again there may be omitted functionnality or errors :
+
+### USER MODES :
+- a : away
+- i : invisible
+- w : wallops
+- r : restricted
+- o : operator
+
+### CHANNEL MODES :
+for users :
+- O : channel creator
+- o : channel operator
+    
+for channels :
+- i : invite only
+- m : moderated
 
 ## Resources
 
